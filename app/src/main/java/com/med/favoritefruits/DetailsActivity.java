@@ -56,23 +56,23 @@ public class DetailsActivity extends AppCompatActivity {
                     getResources().getString(R.string.lemon_long_description),
                     getResources().getString(R.string.strawberry_long_description)};
             if (Objects.equals(title, titles[0])) {
-                fruit_title.setText(title);
+                fruit_title.setText(titles[0]);
                 fruit_details.setText(long_description[0]);
                 fruit_image.setImageResource(R.mipmap.pomme);
             } else if (Objects.equals(title, titles[1])){
-                fruit_title.setText(title);
+                fruit_title.setText(titles[1]);
                 fruit_details.setText(long_description[1]);
                 fruit_image.setImageResource(R.mipmap.banane);
             } else if (Objects.equals(title, titles[2])){
-                fruit_title.setText(title);
+                fruit_title.setText(titles[2]);
                 fruit_details.setText(long_description[2]);
                 fruit_image.setImageResource(R.mipmap.raisin);
             } else if (Objects.equals(title, titles[3])){
-                fruit_title.setText(title);
+                fruit_title.setText(titles[3]);
                 fruit_details.setText(long_description[3]);
                 fruit_image.setImageResource(R.mipmap.citron);
             } else if (Objects.equals(title, titles[4])){
-                fruit_title.setText(title);
+                fruit_title.setText(titles[4]);
                 fruit_details.setText(long_description[4]);
                 fruit_image.setImageResource(R.mipmap.fraise);
             } else {
