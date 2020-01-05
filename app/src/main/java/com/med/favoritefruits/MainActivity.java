@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -29,23 +30,44 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<HashMap<String,String>> listItems = new ArrayList<>();
         HashMap<String,String> item;
         //Titres des fruits
-        String[] title = new String[]{
+        String[] titles = new String[]{
                 getResources().getString(R.string.apple),
                 getResources().getString(R.string.banane),
                 getResources().getString(R.string.grape),
                 getResources().getString(R.string.lemon),
                 getResources().getString(R.string.strawberry)};
         //Description des fruits
-        String[] description = new String[]{
+        String[] descriptions = new String[]{
                 getResources().getString(R.string.apple_description),
                 getResources().getString(R.string.banane_description),
                 getResources().getString(R.string.grape_description),
                 getResources().getString(R.string.lemon_description),
                 getResources().getString(R.string.strawberry_description)};
         // icone (images) des fruits
-        //creation des itemsde la liste
+        String[] icons = new String[]{
+                String.valueOf(R.mipmap.pomme),
+                String.valueOf(R.mipmap.banane),
+                String.valueOf(R.mipmap.raisin),
+                String.valueOf(R.mipmap.citron),
+                String.valueOf(R.mipmap.fraise),
+        };
+        //creation des items de la liste
+        for (int i=0; i<=4; i++)
+        {
+            item = new HashMap<>();
+            item.put("title", titles[i]);
+            item.put("description", descriptions[i]);
+            item.put("icon", icons[i]);
+            listItems.add(item);
+        }
         //creation de l'Adapter
+        SimpleAdapter adapter = new SimpleAdapter(this.getBaseContext(),
+                listItems,
+                R.layout.activity_list_item,
+                new String[]{"title", "description", "icon"},
+                new int[]{R.id.title, R.id.description, R.id.icon});
         //Association de l'adapter à la liste
+        customList.setAdapter(adapter);
         //Interraction avec les items de la liste
         customList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @SuppressWarnings("unchecked")
