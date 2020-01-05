@@ -31,6 +31,7 @@ public class RatingActivity extends AppCompatActivity {
         grapeRatingBar=findViewById(R.id.grape_ratingBar);
         lemonRatingBar=findViewById(R.id.lemon_ratingBar);
         strawberryRatingBar=findViewById(R.id.strawberry_ratingBar);
+        revalidateRating=findViewById(R.id.fruit_revalidateRating);
         //Récupération des préférences
         gonfigureSharedPreferences();
     }
