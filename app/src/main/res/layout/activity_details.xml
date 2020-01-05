@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fruit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_details" />
+
+        <ImageView
+            android:id="@+id/fruit_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/fruits" />
+
+        <TextView
+            android:id="@+id/fruit_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_details" />
+
+        <RatingBar
+            android:id="@+id/fruit_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <Button
+            android:id="@+id/fruit_validateRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/validate_btn" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Favorite Fruits</string>
+    <string name="prefs">MyPrefs</string>
+    <!-- MainActivity -->
+    <string name="main_activity_name">Listes des Fruits</string>
+    <string name="icone">icone</string>
+    <string name="fruit">Fruits Préférés</string>
+    <string name="apple">Pomme</string>
+    <string name="apple_description">Description Pomme ..</string>
+    <string name="banane">Banane</string>
+    <string name="banane_description">Description Banane ..</string>
+    <string name="grape">Raisin</string>
+    <string name="grape_description">Description Raisin ..</string>
+    <string name="lemon">Citron</string>
+    <string name="lemon_description">Description Citron ..</string>
+    <string name="strawberry">Fraise</string>
+    <string name="strawberry_description">Description Fraise ..</string>
+    <!-- Titres et descriptions des autres fruits -->
+    <string name="details_activity_result">Rating avec succès</string>
+    <string name="rating_activity_result">Vous pouvez changer vos préférences</string>
+    <!-- DetailsActivity -->
+    <string name="details_activity_name">Détails Fruits</string>
+    <string name="fruit_details">Description Fruits</string>
+    <string name="apple_long_description">La pomme est un fruit comestible à pépins d\'un goût sucré et acidulé et à la
+    propriété plus ou mins astringente selon les variétés.</string>
+    <string name="banana_long_description">La banane est un fruit comestible à pépins d\'un goût sucré et acidulé et à la
+    propriété plus ou mins astringente selon les variétés.</string>
+    <string name="grape_long_description">La rasin est un fruit comestible à pépins d\'un goût sucré et acidulé et à la
+    propriété plus ou mins astringente selon les variétés.</string>
+    <string name="lemon_long_description">La citron est un fruit comestible à pépins d\'un goût sucré et acidulé et à la
+    propriété plus ou mins astringente selon les variétés.</string>
+    <string name="strawberry_long_description">La fraise est un fruit comestible à pépins d\'un goût sucré et acidulé et à la
+    propriété plus ou mins astringente selon les variétés.</string>
+    <!-- Description longue des autres fruits -->
+    <string name="validate_btn">Valider</string>
+    <!-- RatingActivity -->
+    <string name="rating_activity_name">Préférences Fruits</string>
+    <string name="fruit_rating">Appréciation des Fruits</string>
+    <string name="revalidate_btn">Revalider</string>
+</resources>
